@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Copyright>2020 © Sergey Kuznetsov, Oleksandr Poliakov</Copyright>
+    <AssemblyTitle>Prometheus.Client.DependencyInjection</AssemblyTitle>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Sergey Kuznetsov, Oleksandr Poliakov</Authors>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../Prometheus.Client.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
