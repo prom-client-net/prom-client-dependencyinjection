@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Prometheus.Client.Abstractions;
-using Prometheus.Client.Collectors;
 using Prometheus.Client.Collectors.Abstractions;
 
 namespace Prometheus.Client.DependencyInjection
@@ -9,7 +8,12 @@ namespace Prometheus.Client.DependencyInjection
     {
         public static void AddMetricFactory(this IServiceCollection services)
         {
-            services.AddSingleton<ICollectorRegistry, CollectorRegistry>();
+            AddMetricFactory(services, Metrics.DefaultCollectorRegistry);
+        }
+
+        public static void AddMetricFactory(this IServiceCollection services, ICollectorRegistry collectorRegistry)
+        {
+            services.AddSingleton(collectorRegistry);
             services.AddSingleton<IMetricFactory, MetricFactory>();
         }
     }
