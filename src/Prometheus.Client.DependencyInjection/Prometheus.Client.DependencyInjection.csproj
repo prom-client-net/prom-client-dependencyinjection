@@ -3,10 +3,17 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Copyright>2020 © Serge K, Oleksandr Poliakov</Copyright>
     <AssemblyTitle>Prometheus.Client.DependencyInjection</AssemblyTitle>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
     <Authors>Serge K, Oleksandr Poliakov</Authors>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
+    <PackageId>Prometheus.Client.DependencyInjection</PackageId>
+    <PackageTags>prometheus;metrics</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
