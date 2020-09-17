@@ -3,7 +3,7 @@
     <TargetFrameworks>netstandard2.0;netcoreapp2.2;netstandard2.1</TargetFrameworks>
     <Copyright>2020 © Serge K, Oleksandr Poliakov</Copyright>
     <AssemblyTitle>Prometheus.Client.DependencyInjection</AssemblyTitle>
-    <VersionPrefix>0.2.0</VersionPrefix>
+    <VersionPrefix>0.3.0</VersionPrefix>
     <Authors>Serge K, Oleksandr Poliakov</Authors>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
