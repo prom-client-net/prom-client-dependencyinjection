@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.Client.Dependenc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A819E2C3-731C-4E08-98DA-3DE12BBFAEED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87A204EB-94EA-4061-A26E-0E47DA11A0DB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{87A204EB-94EA-4061-A26E-0E47DA11A0DB}"
 ProjectSection(SolutionItems) = preProject
 	Directory.Build.props = Directory.Build.props
 	LICENSE = LICENSE
@@ -14,6 +14,20 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	.gitattributes = .gitattributes
 	.editorconfig = .editorconfig
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{4BA7C546-8CAF-41AE-872B-09BC2B9064F9}"
+ProjectSection(SolutionItems) = preProject
+	.github\CODEOWNERS = .github\CODEOWNERS
+	.github\FUNDING.yml = .github\FUNDING.yml
+	.github\renovate.json = .github\renovate.json
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{9180D57F-B3A8-4005-B756-41E0AEBE87C7}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\branch.yml = .github\workflows\branch.yml
+	.github\workflows\master.yml = .github\workflows\master.yml
+	.github\workflows\production.yml = .github\workflows\production.yml
 EndProjectSection
 EndProject
 Global
@@ -29,5 +43,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F783AB15-0407-4E82-A698-73B5614C155F} = {A819E2C3-731C-4E08-98DA-3DE12BBFAEED}
+		{4BA7C546-8CAF-41AE-872B-09BC2B9064F9} = {87A204EB-94EA-4061-A26E-0E47DA11A0DB}
+		{9180D57F-B3A8-4005-B756-41E0AEBE87C7} = {4BA7C546-8CAF-41AE-872B-09BC2B9064F9}
 	EndGlobalSection
 EndGlobal

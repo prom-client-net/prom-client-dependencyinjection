@@ -8,8 +8,5 @@
   ],
   "extends": [
     "config:base"
-  ],
-  "nuget": {
-    "enabled": true
-  }
+  ]
 }
