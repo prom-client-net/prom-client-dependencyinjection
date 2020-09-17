@@ -29,4 +29,4 @@ jobs:
       - name: Publish to GitHub
         run: |
           dotnet tool install -g gpr --no-cache -v q
-          gpr push "artifacts/*.nupkg" -k ${{ secrets.GH_DEPLOY_KEY }} || true     
+          gpr push "artifacts/*.nupkg" -k ${{ secrets.GH_DEPLOY_KEY }}   
