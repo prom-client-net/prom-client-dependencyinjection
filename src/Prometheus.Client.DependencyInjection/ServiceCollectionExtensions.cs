@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Prometheus.Client.Abstractions;
 using Prometheus.Client.Collectors;
-using Prometheus.Client.Collectors.Abstractions;
 
 namespace Prometheus.Client.DependencyInjection
 {
