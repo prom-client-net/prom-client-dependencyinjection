@@ -6,17 +6,18 @@ namespace Prometheus.Client.DependencyInjection
     public static class ServiceCollectionExtensions
     {
         /// <summary>
-        /// Add IMetricFactory and ICollectorRegistry into service collection
+        ///     Add IMetricFactory and ICollectorRegistry into service collection
         /// </summary>
         /// <param name="services">Service collection</param>
         public static IServiceCollection AddMetricFactory(this IServiceCollection services)
         {
-            services.AddMetricFactory(new CollectorRegistry());
+            services.AddSingleton<ICollectorRegistry, CollectorRegistry>();
+            services.AddSingleton<IMetricFactory, MetricFactory>();
             return services;
         }
 
         /// <summary>
-        /// Add IMetricFactory and ICollectorRegistry into service collection
+        ///     Add IMetricFactory and ICollectorRegistry into service collection
         /// </summary>
         /// <param name="services">Service collection</param>
         /// <param name="collectorRegistry">Explicit collector registry to use</param>
