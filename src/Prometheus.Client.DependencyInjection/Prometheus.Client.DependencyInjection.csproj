@@ -2,13 +2,12 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <VersionPrefix>0.6.0</VersionPrefix>
-    <AssemblyName>Prometheus.Client.DependencyInjection</AssemblyName>
     <PackageId>Prometheus.Client.DependencyInjection</PackageId>
     <PackageTags>prometheus;metrics</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection</RepositoryUrl>
+    <RepositoryUrl>https://github.com/prom-client-net/prom-client-dependencyinjection</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
