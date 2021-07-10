@@ -1,22 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <Copyright>2020 © Serge K, Oleksandr Poliakov</Copyright>
-    <AssemblyTitle>Prometheus.Client.DependencyInjection</AssemblyTitle>
-    <VersionPrefix>0.5.0</VersionPrefix>
-    <Authors>Serge K, Oleksandr Poliakov</Authors>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>../../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
+    <VersionPrefix>0.6.0</VersionPrefix>
+    <AssemblyName>Prometheus.Client.DependencyInjection</AssemblyName>
     <PackageId>Prometheus.Client.DependencyInjection</PackageId>
     <PackageTags>prometheus;metrics</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="../../icon.png">
@@ -27,7 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.16" />
     <PackageReference Include="Prometheus.Client" Version="4.5.0" />
   </ItemGroup>
 </Project>
