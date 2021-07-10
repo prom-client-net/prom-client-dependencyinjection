@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-dev:
-    name: 🏭 Build Dev
+    name: 🏭 Build Master
     runs-on: ubuntu-20.04
     steps:
       - name: 🚚 Checkout
@@ -21,11 +21,11 @@ jobs:
       - name: 🧪 Tests
         run: dotnet test --no-build -c Release
       - name: 🗜 Pack artifacts
-        run: dotnet pack src/* --no-build -c Release --version-suffix dev-$(date +%s) -o artifacts/
+        run: dotnet pack src --no-build -c Release --version-suffix dev-$(date +%s) -o artifacts/
       - name: 🗄 Publish artifacts
         uses: actions/upload-artifact@v2
         with:
           name: nupkg
           path: artifacts/*
       - name: 📦 Publish to GitHub
-        run: dotnet nuget push "artifacts/*.nupkg" -s https://nuget.pkg.github.com/PrometheusClientNet/index.json -k ${{ secrets.GH_DEPLOY_KEY }} --skip-duplicate
+        run: dotnet nuget push "artifacts/*.nupkg" -s https://nuget.pkg.github.com/prom-client-net/index.json -k ${{ secrets.GH_DEPLOY_KEY }} --skip-duplicate

@@ -6,7 +6,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/Prometheus.Client.DependencyInjection.svg)](https://www.nuget.org/packages/Prometheus.Client.DependencyInjection)
 [![NuGet](https://img.shields.io/nuget/dt/Prometheus.Client.DependencyInjection.svg)](https://www.nuget.org/packages/Prometheus.Client.DependencyInjection)
-[![CI](https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection/workflows/CI/badge.svg)](https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection/actions?query=workflow%3ACI)
+[![CI](https://img.shields.io/github/workflow/status/prom-client-net/prom-client-dependencyinjection/%F0%9F%92%BF%20CI%20Master?label=CI&logo=github)](https://github.com/prom-client-net/prom-client-dependencyinjection/actions/workflows/master.yml)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
