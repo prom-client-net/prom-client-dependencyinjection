@@ -15,7 +15,7 @@
     <AssemblyOriginatorKeyFile>../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="../../icon.png">
+    <None Include="../icon.png">
       <Pack>true</Pack>
       <Visible>false</Visible>
       <PackagePath></PackagePath>
