@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <VersionPrefix>0.6.0</VersionPrefix>
+    <VersionPrefix>0.6.1</VersionPrefix>
+    <Description>Microsoft.Extensions.DependencyInjection (IServiceCollection) support for the Prometheus.Client</Description>
     <PackageId>Prometheus.Client.DependencyInjection</PackageId>
     <PackageTags>prometheus;metrics</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
@@ -24,6 +25,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.16" />
-    <PackageReference Include="Prometheus.Client" Version="4.5.0" />
+    <PackageReference Include="Prometheus.Client" Version="4.5.1" />
   </ItemGroup>
 </Project>
