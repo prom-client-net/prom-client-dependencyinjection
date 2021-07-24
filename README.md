@@ -1,7 +1,3 @@
-[bmac]: https://www.buymeacoffee.com/phnx47
-[ko-fi]: https://ko-fi.com/phnx47
-[patreon]: https://www.patreon.com/phnx47
-
 # Prometheus.Client.DependencyInjection
 
 [![NuGet](https://img.shields.io/nuget/v/Prometheus.Client.DependencyInjection.svg)](https://www.nuget.org/packages/Prometheus.Client.DependencyInjection)
@@ -11,7 +7,7 @@
 
 ## Installation
 
-```shell script
+```shell
 dotnet add package Prometheus.Client.DependencyInjection
 ```
 
@@ -37,18 +33,8 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 Contributions to the package are always welcome!
 
-* Report any bugs or issues you find on the [issue tracker](https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection/issues).
-* You can grab the source code at the package's [git repository](https://github.com/PrometheusClientNet/Prometheus.Client.DependencyInjection).
-
-## Support
-
-If you like what I'm accomplishing, feel free to buy me a coffee
-
-[<img align="left" alt="phnx47 | Buy Me a Coffe" width="32px" src="https://raw.githubusercontent.com/phnx47/files/master/button-sponsors/bmac0.png" />][bmac]
-[<img align="left" alt="phnx47 | Kofi" width="32px" src="https://raw.githubusercontent.com/phnx47/files/master/button-sponsors/kofi0.png" />][ko-fi]
-[<img align="left" alt="phnx47 | Patreon" width="32px" src="https://raw.githubusercontent.com/phnx47/files/master/button-sponsors/patreon0.png" />][patreon]
-
-&nbsp;
+* Report any bugs or issues you find on the [issue tracker](https://github.com/prom-client-net/prom-client-dependencyinjection/issues).
+* You can grab the source code at the package's [git repository](https://github.com/prom-client-net/prom-client-dependencyinjection).
 
 ## License
 
