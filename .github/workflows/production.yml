@@ -27,5 +27,7 @@ jobs:
         with:
           name: nupkg
           path: artifacts/*
+      - name: 📦 Publish to GitHub
+        run: dotnet nuget push "artifacts/*.nupkg" -s https://nuget.pkg.github.com/prom-client-net/index.json -k ${{ secrets.GH_DEPLOY_KEY }} --skip-duplicate
       - name: 📦 Publish to NuGet
         run: dotnet nuget push "artifacts/*.nupkg" -k ${{ secrets.NUGET_DEPLOY_KEY }} -s https://api.nuget.org/v3/index.json
