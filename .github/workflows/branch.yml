@@ -21,5 +21,5 @@ jobs:
         run: dotnet restore
       - name: 🏭 Build
         run: dotnet build --no-restore -c Release /p:ContinuousIntegrationBuild=true
-      - name: 🧪 Tests
+      - name: 🧪 Run tests
         run: dotnet test --no-build -c Release --filter FullyQualifiedName\!~Tests.Integration
