@@ -1,4 +1,4 @@
-name: 💿 CI Master
+name: 💿 CI Dev
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-dev:
-    name: 🏭 Build Master
+    name: 🏭 Build Dev
     runs-on: ubuntu-20.04
     steps:
       - name: 🚚 Checkout
@@ -19,7 +19,7 @@ jobs:
       - name: 🏭 Build
         run: dotnet build --no-restore -c Release /p:ContinuousIntegrationBuild=true
       - name: 🧪 Run tests
-        run: dotnet test --no-build -c /p:CollectCoverage=true /p:CoverletOutputFormat=opencover Release --filter FullyQualifiedName\!~Tests.Integration
+        run: dotnet test --no-build -c Release --filter FullyQualifiedName\!~Tests.Integration /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
       - name: ☢ Publish to Codecov
         uses: codecov/codecov-action@v2
       - name: 🗜 Pack artifacts

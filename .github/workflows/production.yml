@@ -19,7 +19,9 @@ jobs:
       - name: 🏭 Build
         run: dotnet build --no-restore -c Release /p:ContinuousIntegrationBuild=true
       - name: 🧪 Run tests
-        run: dotnet test --no-build -c Release --filter FullyQualifiedName\!~Tests.Integration
+        run: dotnet test --no-build -c Release --filter FullyQualifiedName\!~Tests.Integration /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      - name: ☢ Publish to Codecov
+        uses: codecov/codecov-action@v2
       - name: 🗜 Pack artifacts
         run: dotnet pack -c Release --no-build -o artifacts/
       - name: 🗄 Publish artifacts
