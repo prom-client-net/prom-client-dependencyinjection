@@ -23,9 +23,9 @@ EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{9180D57F-B3A8-4005-B756-41E0AEBE87C7}"
 ProjectSection(SolutionItems) = preProject
-	.github\workflows\branch.yml = .github\workflows\branch.yml
+	.github\workflows\pr.yml = .github\workflows\pr.yml
 	.github\workflows\master.yml = .github\workflows\master.yml
-	.github\workflows\production.yml = .github\workflows\production.yml
+	.github\workflows\prod.yml = .github\workflows\prod.yml
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.Client.DependencyInjection", "src\Prometheus.Client.DependencyInjection.csproj", "{D21BC30A-2F08-4B82-A0B7-C7CED812FF73}"
