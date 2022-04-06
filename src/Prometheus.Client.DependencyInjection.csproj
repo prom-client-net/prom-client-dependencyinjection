@@ -1,26 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
-    <VersionPrefix>1.0.1</VersionPrefix>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
+    <VersionPrefix>1.1.0</VersionPrefix>
     <Description>Microsoft.Extensions.DependencyInjection (IServiceCollection) support for the Prometheus.Client</Description>
     <PackageId>Prometheus.Client.DependencyInjection</PackageId>
-    <PackageTags>prometheus;metrics</PackageTags>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/prom-client-net/prom-client-dependencyinjection</RepositoryUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <SignAssembly>true</SignAssembly>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <AssemblyOriginatorKeyFile>../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="../icon.png">
-      <Pack>true</Pack>
-      <Visible>false</Visible>
-      <PackagePath></PackagePath>
-    </None>
+    <None Include="..\icon.png" Visible="false" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.0" />
@@ -28,7 +17,10 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
   </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="[4.5.2,5.0.0)" />
+    <PackageReference Include="Prometheus.Client" Version="[4.5.3,5.0.0)" />
   </ItemGroup>
 </Project>
