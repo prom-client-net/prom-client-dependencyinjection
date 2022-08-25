@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
-    <VersionPrefix>1.1.0</VersionPrefix>
+    <VersionPrefix>1.2.0</VersionPrefix>
     <Description>Microsoft.Extensions.DependencyInjection (IServiceCollection) support for the Prometheus.Client</Description>
     <PackageId>Prometheus.Client.DependencyInjection</PackageId>
     <RepositoryUrl>https://github.com/prom-client-net/prom-client-dependencyinjection</RepositoryUrl>
@@ -21,6 +21,6 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="[4.5.3,5.0.0)" />
+    <PackageReference Include="Prometheus.Client" Version="[5.0.0,6.0.0)" />
   </ItemGroup>
 </Project>
