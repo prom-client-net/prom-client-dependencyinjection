@@ -9,7 +9,8 @@
     <AssemblyOriginatorKeyFile>../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\icon.png" Visible="false" Pack="true" PackagePath="" />
+    <None Include="../icon.png" Visible="false" Pack="true" PackagePath="" />
+    <None Include="../README.md" Visible="false"  Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
