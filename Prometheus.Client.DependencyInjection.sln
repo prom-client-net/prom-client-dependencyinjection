@@ -1,36 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A819E2C3-731C-4E08-98DA-3DE12BBFAEED}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{87A204EB-94EA-4061-A26E-0E47DA11A0DB}"
-ProjectSection(SolutionItems) = preProject
-	Directory.Build.props = Directory.Build.props
-	LICENSE = LICENSE
-	README.md = README.md
-	stylecop.json = stylecop.json
-	.ruleset = .ruleset
-	.gitignore = .gitignore
-	.gitattributes = .gitattributes
-	.editorconfig = .editorconfig
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{4BA7C546-8CAF-41AE-872B-09BC2B9064F9}"
-ProjectSection(SolutionItems) = preProject
-	.github\CODEOWNERS = .github\CODEOWNERS
-	.github\FUNDING.yml = .github\FUNDING.yml
-	.github\renovate.json = .github\renovate.json
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{9180D57F-B3A8-4005-B756-41E0AEBE87C7}"
-ProjectSection(SolutionItems) = preProject
-	.github\workflows\pr.yml = .github\workflows\pr.yml
-	.github\workflows\master.yml = .github\workflows\master.yml
-	.github\workflows\prod.yml = .github\workflows\prod.yml
-EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.Client.DependencyInjection", "src\Prometheus.Client.DependencyInjection.csproj", "{D21BC30A-2F08-4B82-A0B7-C7CED812FF73}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7CD385DF-B439-433D-B536-B0385ECC35EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.Client.DependencyInjection.Tests", "tests\Prometheus.Client.DependencyInjection.Tests.csproj", "{CE0316E6-C12A-4E11-AFA1-9B1C0C0DB2F1}"
 EndProject
@@ -50,9 +20,5 @@ Global
 		{CE0316E6-C12A-4E11-AFA1-9B1C0C0DB2F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4BA7C546-8CAF-41AE-872B-09BC2B9064F9} = {87A204EB-94EA-4061-A26E-0E47DA11A0DB}
-		{9180D57F-B3A8-4005-B756-41E0AEBE87C7} = {4BA7C546-8CAF-41AE-872B-09BC2B9064F9}
-		{D21BC30A-2F08-4B82-A0B7-C7CED812FF73} = {A819E2C3-731C-4E08-98DA-3DE12BBFAEED}
-		{CE0316E6-C12A-4E11-AFA1-9B1C0C0DB2F1} = {7CD385DF-B439-433D-B536-B0385ECC35EB}
 	EndGlobalSection
 EndGlobal
