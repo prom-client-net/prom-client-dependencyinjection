@@ -2,16 +2,10 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
     <VersionPrefix>1.3.0</VersionPrefix>
-    <Description>Microsoft.Extensions.DependencyInjection (IServiceCollection) support for the Prometheus.Client</Description>
-    <PackageId>Prometheus.Client.DependencyInjection</PackageId>
+    <Description>DependencyInjection support for the Prometheus.Client</Description>
     <RepositoryUrl>https://github.com/prom-client-net/prom-client-dependencyinjection</RepositoryUrl>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyOriginatorKeyFile>../Prometheus.Client.DependencyInjection.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
-  <ItemGroup>
-    <None Include="../icon.png" Visible="false" Pack="true" PackagePath="" />
-    <None Include="../README.md" Visible="false"  Pack="true" PackagePath="" />
-  </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
   </ItemGroup>
