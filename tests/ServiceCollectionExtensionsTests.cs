@@ -2,48 +2,47 @@ using Microsoft.Extensions.DependencyInjection;
 using Prometheus.Client.Collectors;
 using Xunit;
 
-namespace Prometheus.Client.DependencyInjection.Tests
+namespace Prometheus.Client.DependencyInjection.Tests;
+
+public class ServiceCollectionExtensionsTests
 {
-    public class ServiceCollectionExtensionsTests
+    [Fact]
+    public void Check_AddMetricFactory()
     {
-        [Fact]
-        public void Check_AddMetricFactory()
-        {
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.AddMetricFactory();
-            var serviceProvider = serviceCollection.BuildServiceProvider();
-            var metrricFactory = serviceProvider.GetService<IMetricFactory>();
-            Assert.NotNull(metrricFactory);
-        }
+        var sp = new ServiceCollection()
+            .AddMetricFactory()
+            .BuildServiceProvider();
 
-        [Fact]
-        public void Check_AddMetricFactory_Custom_CollectorRegistry()
-        {
-            var collectorRegistry = new CollectorRegistry();
+        var metricFactory = sp.GetService<IMetricFactory>();
+        Assert.NotNull(metricFactory);
+    }
 
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.AddMetricFactory(collectorRegistry);
-            var serviceProvider = serviceCollection.BuildServiceProvider();
-            var metrricFactory = serviceProvider.GetService<IMetricFactory>();
+    [Fact]
+    public void Check_AddMetricFactory_Custom_CollectorRegistry()
+    {
+        var collectorRegistry = new CollectorRegistry();
 
-            Assert.NotNull(metrricFactory);
+        var sp = new ServiceCollection()
+            .AddMetricFactory(collectorRegistry)
+            .BuildServiceProvider();
 
-            var actualCollectorRegistry = serviceProvider.GetService<ICollectorRegistry>();
-            Assert.Equal(collectorRegistry, actualCollectorRegistry);
-            Assert.NotEqual(Metrics.DefaultCollectorRegistry, actualCollectorRegistry);
-        }
+        var metricFactory = sp.GetService<IMetricFactory>();
+        Assert.NotNull(metricFactory);
 
-        [Fact]
-        public void Check_AddMetricFactory_Default_CollectorRegistry()
-        {
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.AddMetricFactory(Metrics.DefaultCollectorRegistry);
-            var serviceProvider = serviceCollection.BuildServiceProvider();
-            var metrricFactory = serviceProvider.GetService<IMetricFactory>();
+        var actualCollectorRegistry = sp.GetService<ICollectorRegistry>();
+        Assert.Equal(collectorRegistry, actualCollectorRegistry);
+        Assert.NotEqual(Metrics.DefaultCollectorRegistry, actualCollectorRegistry);
+    }
 
-            Assert.NotNull(metrricFactory);
+    [Fact]
+    public void Check_AddMetricFactory_Default_CollectorRegistry()
+    {
+        var sp = new ServiceCollection()
+            .AddMetricFactory(Metrics.DefaultCollectorRegistry)
+            .BuildServiceProvider();
 
-            Assert.Equal(Metrics.DefaultCollectorRegistry, serviceProvider.GetService<ICollectorRegistry>());
-        }
+        var metricFactory = sp.GetService<IMetricFactory>();
+        Assert.NotNull(metricFactory);
+        Assert.Equal(Metrics.DefaultCollectorRegistry, sp.GetService<ICollectorRegistry>());
     }
 }
