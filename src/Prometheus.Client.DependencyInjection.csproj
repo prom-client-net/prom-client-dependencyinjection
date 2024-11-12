@@ -7,8 +7,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />
-    <PackageReference Condition="'$(TargetFramework)' == 'netstandard2.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
-    <PackageReference Condition="'$(TargetFramework)' == 'net6.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-    <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Condition="'$(TargetFramework)' == 'netstandard2.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    <PackageReference Condition="'$(TargetFramework)' == 'net6.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
   </ItemGroup>
 </Project>
