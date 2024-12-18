@@ -8,7 +8,7 @@
 
 ## Install
 
-```shell
+```sh
 dotnet add package Prometheus.Client.DependencyInjection
 ```
 
@@ -21,7 +21,7 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 }
 ```
 
-or compatible with old static code:
+or compatible with static `Metrics.DefaultCollectorRegistry`:
 
 ```c#
 public IServiceProvider ConfigureServices(IServiceCollection services)
